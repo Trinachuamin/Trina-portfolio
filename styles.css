@@ -1,0 +1,1457 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Background styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 420vh;
+    overflow-y: scroll;
+    position: relative;
+}
+
+/* Stars animation */
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.8;
+    animation: twinkle 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+/* Animation for twinkling stars */
+@keyframes twinkle {
+    0% {
+        opacity: 0.2;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(0.9);
+    }
+}
+
+/* Create random star positions and sizes */
+.star1 {
+    width: 2px;
+    height: 2px;
+    top: 10%;
+    left: 15%;
+    animation-duration: 3s;
+}
+
+.star2 {
+    width: 3px;
+    height: 3px;
+    top: 20%;
+    left: 30%;
+    animation-duration: 2s;
+}
+
+.star3 {
+    width: 1.5px;
+    height: 1.5px;
+    top: 35%;
+    left: 50%;
+    animation-duration: 4s;
+}
+
+.star4 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 50%;
+    left: 70%;
+    animation-duration: 3s;
+}
+
+.star5 {
+    width: 3px;
+    height: 3px;
+    top: 60%;
+    left: 85%;
+    animation-duration: 5s;
+}
+
+.star6 {
+    width: 2px;
+    height: 2px;
+    top: 15%;
+    left: 80%;
+    animation-duration: 2.5s;
+}
+
+.star7 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 25%;
+    left: 5%;
+    animation-duration: 4s;
+}
+
+.star8 {
+    width: 3px;
+    height: 3px;
+    top: 5%;
+    left: 60%;
+    animation-duration: 3s;
+}
+
+.star9 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 45%;
+    left: 25%;
+    animation-duration: 3.2s;
+}
+
+.star10 {
+    width: 2px;
+    height: 2px;
+    top: 55%;
+    left: 15%;
+    animation-duration: 2.7s;
+}
+
+.star11 {
+    width: 3px;
+    height: 3px;
+    top: 70%;
+    left: 90%;
+    animation-duration: 3.1s;
+}
+
+.star12 {
+    width: 2.2px;
+    height: 2.2px;
+    top: 65%;
+    left: 40%;
+    animation-duration: 4.5s;
+}
+
+.star13 {
+    width: 3px;
+    height: 3px;
+    top: 80%;
+    left: 30%;
+    animation-duration: 3.7s;
+}
+
+.star14 {
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 10%;
+    animation-duration: 5s;
+}
+
+.star15 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 75%;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+.star16 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 20%;
+    left: 85%;
+    animation-duration: 2.3s;
+}
+
+.star17 {
+    width: 3px;
+    height: 3px;
+    top: 40%;
+    left: 60%;
+    animation-duration: 4.2s;
+}
+
+.star18 {
+    width: 1.5px;
+    height: 1.5px;
+    top: 80%;
+    left: 50%;
+    animation-duration: 3.4s;
+}
+
+.star19 {
+    width: 2px;
+    height: 2px;
+    top: 60%;
+    left: 20%;
+    animation-duration: 3.9s;
+}
+
+.star20 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 25%;
+    left: 75%;
+    animation-duration: 2.8s;
+}
+
+.star21 {
+    width: 3px;
+    height: 3px;
+    top: 70%;
+    left: 40%;
+    animation-duration: 3.5s;
+}
+
+.star22 {
+    width: 2px;
+    height: 2px;
+    top: 90%;
+    left: 10%;
+    animation-duration: 4.1s;
+}
+
+.star23 {
+    width: 1.5px;
+    height: 1.5px;
+    top: 15%;
+    left: 45%;
+    animation-duration: 3s;
+}
+
+.star24 {
+    width: 3px;
+    height: 3px;
+    top: 50%;
+    left: 5%;
+    animation-duration: 3.3s;
+}
+
+.star25 {
+    width: 2px;
+    height: 2px;
+    top: 65%;
+    left: 85%;
+    animation-duration: 4.2s;
+}
+
+.star26 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 35%;
+    left: 80%;
+    animation-duration: 3.8s;
+}
+
+.star27 {
+    width: 3px;
+    height: 3px;
+    top: 45%;
+    left: 65%;
+    animation-duration: 2.5s;
+}
+
+.star28 {
+    width: 2px;
+    height: 2px;
+    top: 75%;
+    left: 30%;
+    animation-duration: 4s;
+}
+
+.star29 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 30%;
+    left: 20%;
+    animation-duration: 3s;
+}
+
+.star30 {
+    width: 2.2px;
+    height: 2.2px;
+    top: 10%;
+    left: 90%;
+    animation-duration: 3.6s;
+}
+
+.star31 {
+    width: 2px;
+    height: 2px;
+    top: 5%;
+    left: 25%;
+    animation-duration: 4.4s;
+}
+
+.star32 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 70%;
+    left: 15%;
+    animation-duration: 3s;
+}
+
+.star33 {
+    width: 1.5px;
+    height: 1.5px;
+    top: 50%;
+    left: 45%;
+    animation-duration: 3.1s;
+}
+
+.star34 {
+    width: 2.8px;
+    height: 2.8px;
+    top: 60%;
+    left: 75%;
+    animation-duration: 2.9s;
+}
+
+.star35 {
+    width: 2px;
+    height: 2px;
+    top: 40%;
+    left: 80%;
+    animation-duration: 4.7s;
+}
+
+.star36 {
+    width: 3px;
+    height: 3px;
+    top: 55%;
+    left: 10%;
+    animation-duration: 3.3s;
+}
+
+.star37 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 65%;
+    left: 60%;
+    animation-duration: 3.2s;
+}
+
+.star38 {
+    width: 2px;
+    height: 2px;
+    top: 30%;
+    left: 70%;
+    animation-duration: 2.8s;
+}
+
+.star39 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 10%;
+    left: 55%;
+    animation-duration: 4.5s;
+}
+
+.star40 {
+    width: 3px;
+    height: 3px;
+    top: 80%;
+    left: 45%;
+    animation-duration: 3.6s;
+}
+
+.star41 {
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 85%;
+    animation-duration: 2.7s;
+}
+
+.star42 {
+    width: 2.2px;
+    height: 2.2px;
+    top: 10%;
+    left: 35%;
+    animation-duration: 3.3s;
+}
+
+.star43 {
+    width: 1.5px;
+    height: 1.5px;
+    top: 75%;
+    left: 50%;
+    animation-duration: 2.5s;
+}
+
+.star44 {
+    width: 2.8px;
+    height: 2.8px;
+    top: 20%;
+    left: 80%;
+    animation-duration: 4.2s;
+}
+
+.star45 {
+    width: 2px;
+    height: 2px;
+    top: 35%;
+    left: 50%;
+    animation-duration: 3s;
+}
+
+.star46 {
+    width: 3px;
+    height: 3px;
+    top: 25%;
+    left: 10%;
+    animation-duration: 4.4s;
+}
+
+.star47 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 40%;
+    left: 25%;
+    animation-duration: 3s;
+}
+
+.star48 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 55%;
+    left: 95%;
+    animation-duration: 3.7s;
+}
+
+.star49 {
+    width: 2px;
+    height: 2px;
+    top: 70%;
+    left: 65%;
+    animation-duration: 4s;
+}
+
+.star50 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 15%;
+    left: 50%;
+    animation-duration: 3.2s;
+}
+
+.star51 {
+    width: 2px;
+    height: 2px;
+    top: 60%;
+    left: 80%;
+    animation-duration: 3.5s;
+}
+
+.star52 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 75%;
+    left: 40%;
+    animation-duration: 3.1s;
+}
+
+.star53 {
+    width: 3px;
+    height: 3px;
+    top: 30%;
+    left: 55%;
+    animation-duration: 4.2s;
+}
+
+.star54 {
+    width: 2px;
+    height: 2px;
+    top: 20%;
+    left: 40%;
+    animation-duration: 4.7s;
+}
+
+.star55 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 80%;
+    left: 10%;
+    animation-duration: 3.4s;
+}
+
+.star56 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 65%;
+    left: 75%;
+    animation-duration: 2.9s;
+}
+
+.star57 {
+    width: 3px;
+    height: 3px;
+    top: 55%;
+    left: 20%;
+    animation-duration: 3.3s;
+}
+
+.star58 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 40%;
+    left: 10%;
+    animation-duration: 4.1s;
+}
+
+.star59 {
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 30%;
+    animation-duration: 4.6s;
+}
+
+.star60 {
+    width: 3px;
+    height: 3px;
+    top: 70%;
+    left: 60%;
+    animation-duration: 3.8s;
+}
+
+.star61 {
+    width: 2px;
+    height: 2px;
+    top: 45%;
+    left: 75%;
+    animation-duration: 3s;
+}
+
+.star62 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 25%;
+    left: 65%;
+    animation-duration: 4.3s;
+}
+
+.star63 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 10%;
+    left: 5%;
+    animation-duration: 2.6s;
+}
+
+.star64 {
+    width: 3px;
+    height: 3px;
+    top: 40%;
+    left: 90%;
+    animation-duration: 3.7s;
+}
+
+.star65 {
+    width: 2px;
+    height: 2px;
+    top: 30%;
+    left: 35%;
+    animation-duration: 4.4s;
+}
+
+.star66 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 60%;
+    left: 15%;
+    animation-duration: 3.6s;
+}
+
+.star67 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 75%;
+    left: 55%;
+    animation-duration: 2.8s;
+}
+
+.star68 {
+    width: 2px;
+    height: 2px;
+    top: 85%;
+    left: 25%;
+    animation-duration: 3.2s;
+}
+
+.star69 {
+    width: 3px;
+    height: 3px;
+    top: 20%;
+    left: 80%;
+    animation-duration: 4.5s;
+}
+
+.star70 {
+    width: 1.8px;
+    height: 1.8px;
+    top: 65%;
+    left: 45%;
+    animation-duration: 3.4s;
+}
+
+.star71 {
+    width: 2px;
+    height: 2px;
+    top: 90%;
+    left: 60%;
+    animation-duration: 4.1s;
+}
+
+.star72 {
+    width: 3px;
+    height: 3px;
+    top: 55%;
+    left: 70%;
+    animation-duration: 3.9s;
+}
+
+.star73 {
+    width: 2.5px;
+    height: 2.5px;
+    top: 50%;
+    left: 20%;
+    animation-duration: 4.3s;
+}
+
+.star74 {
+    width: 2px;
+    height: 2px;
+    top: 35%;
+    left: 5%;
+    animation-duration: 3.7s;
+}
+
+.star75 {
+    width: 3px;
+    height: 3px;
+    top: 60%;
+    left: 90%;
+    animation-duration: 4.2s;
+}
+
+.star76 {
+    width: 3px;
+    height: 3px;
+    top: 90%;
+    left: 90%;
+    animation-duration: 4.2s;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+    /* Ensure text stays above the stars */
+}
+
+/* Navigation Bar */
+header {
+    background: transparent;
+    /* Make background transparent */
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: none;
+    position: fixed;
+    /* Keeps the navbar fixed at the top */
+    width: 100%;
+    /* Ensures it spans the full width of the viewport */
+    z-index: 1000;
+    /* Ensures it stays above other content */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Ensures the nav spans the full width */
+}
+
+nav .logo {
+    height: 70px;
+    width: 110px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffffcc;
+    /* Text color */
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c86682;
+    /* Hover color */
+    border-bottom: 2px solid #ffffff;
+    /* Underline on hover */
+}
+
+.navbar {
+    background-color: transparent;
+    /* Keep the navbar background transparent */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Common Section Styles */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    animation: fadeIn 0.8s ease forwards;
+    /* Fade-in animation */
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section */
+
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #212530;
+}
+
+.home .home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffffcc;
+}
+
+span {
+    color: #c86682;
+}
+
+.home-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+}
+
+.home-img {
+    border-radius: 40%;
+}
+
+.home-img img {
+    position: relative;
+    width: 30vw;
+    border-radius: 0%;
+    cursor: pointer;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.home-img img:hover {
+    content: url("public/home-hover.jpg");
+    transform: scale(1.1) rotate(10deg);
+    opacity: 0.9;
+}
+
+@keyframes reverseAnimation {
+    0% {
+        transform: scale(1.1) rotate(10deg);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(1.2) rotate(5deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.7rem;
+    height: 3.7rem;
+    background-color: transparent;
+    border: 0.2rem solid #c86682;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #c86682;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #c86682;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #ffffffcc;
+    box-shadow: 0 0 25px #ffffffcc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #c86682;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #ffffffcc;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #ffffffcc;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: #ffffffcc;
+    color: #c86682;
+    box-shadow: 0 0 25px #c86682;
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #212530;
+    text-align: center;
+    /* Centers text in the section */
+    padding: 30px;
+    /* Adds space around the section */
+    display: block;
+    /* Stack elements */
+}
+
+/* Header Styles */
+.about-heading2 {
+    margin: 20px 0;
+    /* Adjust margin as needed */
+    font-size: 3rem;
+    /* Font size */
+    font-weight: bold;
+    /* Makes the heading bold */
+    font-family: 'Georgia', serif;
+    color: #ffffffcc;
+}
+
+/* Header Styles */
+.about-heading {
+    text-align: center;
+    /* Center the heading */
+    font-size: 2rem;
+    /* Adjust the font size as needed */
+    margin-bottom: 40px;
+    /* Add margin to separate from the cards */
+    z-index: 2;
+
+}
+
+#portfolio {
+    background-color: #212530;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    padding: 10px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #c86682, #e39da5);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+    background: linear-gradient(135deg, #e39da5, #c86682);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-7px);
+}
+
+/* Active Button */
+.filter-button.active {
+    background: linear-gradient(135deg, #a6485d, #c86682); /* Distinct gradient for active */
+    box-shadow: 0px 8px 15px rgba(200, 102, 130, 0.4); /* Glow effect */
+    transform: scale(1.1); /* Slightly larger size */
+    color: #ffffff; /* Ensure text stays visible */
+    border: 2px solid #e39da5; /* Optional border to highlight */
+    font-size: 1.1rem; /* Slightly larger font */
+}
+
+
+/* Projects Container Styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Card Styling */
+.card {
+    flex: 1 1 calc(33.33% - 40px);
+    /* Flexible width for three cards per row */
+    width: 300px;
+    height: 300px;
+    background: #212530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 1px #00000088;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    /* Consistent margin for spacing */
+    border-radius: 10px;
+    opacity: 1;
+    transform: scale(1) translateX(0) translateY(0);
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    position: relative;
+    pointer-events: auto;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    /* Lift effect on hover */
+}
+/* Hidden State */
+.card.hidden {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+    pointer-events: none;
+}
+
+/* Animation when cards appear */
+.card.animate-in {
+    animation: smoothAppear 0.6s ease-out;
+}
+
+/* Keyframes for a simpler appear effect */
+@keyframes smoothAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Content Styling */
+.card .content {
+    border-radius: 10px;
+    background: #33394A;
+    width: 280px;
+    height: 280px;
+    z-index: 1;
+    margin: auto;
+    /* Center the background within the card */
+    padding: 20px;
+    color: #FAF3E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Georgia", serif;
+    position: relative;
+}
+
+/* Image Styling */
+.card-image {
+    width: 100%;
+    /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px;
+    transition: filter 0.3s ease;
+    /* Smooth transition for blur effect */
+    background-color: transparent;
+
+}
+
+/* Blur the image on card hover */
+.card:hover .card-image {
+    filter: blur(5px);
+    /* Adjust the blur intensity as needed */
+}
+
+/* Title and Description initially hidden */
+.card-title,
+.card-description {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* Fade in effect */
+    position: absolute;
+    color: #FAF3E3;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Positioning of Title and Description */
+.card-title {
+    top: 30%;
+    /* Position the title */
+    font-size: 1.5em;
+    color: #c86682;
+    /* Accent color for titles */
+    font-family: "Bodoni MT", serif;
+}
+
+.card-description {
+    top: 50%;
+    /* Position description below title */
+    font-size: 1em;
+    line-height: 1.6;
+    font-family: "Georgia", serif;
+    width: 90%;
+}
+
+/* Hover Effect to reveal title and description */
+.card:hover .card-title,
+.card:hover .card-description {
+    opacity: 1;
+    /* Make visible on hover */
+}
+
+/* Hover Effects */
+.content::before {
+    opacity: 0;
+    transition: opacity 300ms;
+    content: " ";
+    display: block;
+    background: #FAF3E3;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    filter: blur(50px);
+}
+
+.card:hover .content::before {
+    opacity: 0.6;
+}
+
+.card::before {
+    opacity: 0;
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 360px;
+    background: linear-gradient(90deg, transparent, #c86682, #387ef0, transparent);
+    transition: opacity 300ms;
+    animation: rotation_9018 3000ms infinite linear;
+    animation-play-state: paused;
+}
+
+.card:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+}
+
+.card::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 300px;
+    height: 450px;
+    background: #17171733;
+    backdrop-filter: blur(50px);
+}
+
+/* Animation */
+@keyframes rotation_9018 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #212530;
+    /* Adjusted to a beige tone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-heading {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffffcc;
+    text-align: center;
+    animation: slideIn 0.8s ease forwards;
+    /* Slide-in animation */
+}
+
+.about-content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: transparent;
+    /* Background color for about content */
+    padding: 100px;
+    flex-direction: row;
+    border: none;
+}
+
+
+.about-content img {
+    border-radius: 10%;
+    width: 350px;
+    height: 470px;
+    object-fit: cover;
+}
+
+.about-content p {
+    font-size: 1.3rem;
+    color: #ffffffcc;
+    max-width: 800px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.skills-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between images */
+    margin-top: 20px;
+    /* Space above images */
+    padding: 10px;
+    /* Add padding if needed */
+}
+
+.about-text {
+    flex: 1;
+    /* Allow text area to take available space */
+}
+
+.about-text p {
+    font-size: 1.4rem;
+    /* Adjusted font size */
+    color: #ffffff;
+    /* Contrast color for text */
+    max-width: 800px;
+    line-height: 1.6;
+    /* Improved line height for readability */
+}
+
+
+.skills-images img {
+    width: 80px;
+    /* Adjust the size of the skill images */
+    height: 90px;
+    /* Adjust the size of the skill images */
+    transition: transform 0.3s;
+    /* Animation on hover */
+    border: none;
+}
+
+.skills-images img:hover {
+    transform: scale(1.1);
+    /* Scale effect on hover */
+}
+
+
+/* Contact section */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #212530;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.contact-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffffcc;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* Adjusted gap for sizing */
+    justify-content: center;
+    /* Center the content */
+    align-items: flex-start;
+    text-align: center;
+    /* This can remain if you want left alignment for other contents */
+    max-width: 1000px;
+    /* Set a maximum width for the content area */
+    margin: 0 auto;
+    /* Center the content area */
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    /* Allow the elements to grow equally */
+    max-width: 450px;
+    /* Adjusted max-width for responsiveness */
+    min-width: 280px;
+    /* Set a minimum width for responsiveness */
+}
+
+.contact-info h3,
+.contact-form h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    color: #c86682;
+    text-decoration: underline;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 0;
+    justify-content: center;
+}
+
+.contact-icons i {
+    margin-top: 100px;
+    font-size: 40px;
+    /* For Font Awesome icons */
+}
+
+.contact-icons li {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.contact-icons li:hover {
+    transform: scale(1.15);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.submit-btn {
+    background-color: #c86682;
+    color: #fff;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #b6576e;
+    /* Change hover color for better contrast */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 30px 10px;
+    }
+
+    .contact-title {
+        font-size: 2em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #212530;
+    color: #ffffffcc;
+    font-size: 1rem;
+    border-top: 2px solid #c86682;
+}
+
+/* Animation for sections appearing on scroll */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeSlideUp 0.6s ease forwards;
+}
