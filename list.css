@@ -1090,3 +1090,88 @@ footer {
     background-color: #2c303a;
 
 }
+
+.project-links {
+    margin-top: 20px;
+}
+
+.project-links .btn {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #007BFF; /* Blue button color */
+    transition: background-color 0.3s ease;
+}
+
+.project-links .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.github-button {
+    background-color: #24292e; /* GitHub black button color */
+}
+
+.github-button:hover {
+    background-color: #000000; /* Darker black */
+}
+
+.video-button {
+    background-color: #FF0000; /* YouTube red button color */
+}
+
+.video-button:hover {
+    background-color: #cc0000; /* Darker red */
+}
+
+.project-links .btn {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #8D99AE; /* Border to make the button distinguishable */
+    color: #8D99AE; /* Text color matching the theme */
+    background-color: #2B2D42; /* Match the page background color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-links .btn:hover {
+    background-color: #8D99AE; /* Slightly lighter on hover */
+    color: #2B2D42; /* Change text color for contrast */
+}
+
+.features-highlights {
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-links {
+    margin-top: 20px;
+    background-color: #2c303a; /* Ensure same background as the section */
+    padding: 10px;
+    text-align: center; /* Center align the buttons */
+    border-radius: 5px; /* Optional: Rounded corners for consistency */
+}
+
+.project-links .btn {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white; /* Text color */
+    background-color: #c86682; /* Match the "Back to Portfolio" button background color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-links .btn:hover {
+    background-color: #ffffff; /* Match the hover effect of the "Back to Portfolio" button */
+    color: #c86682; /* Keep text white for contrast */
+}
+

@@ -1545,56 +1545,6 @@ footer {
     
 }
 
-/* General Navbar Styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #212530;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 1; /* Ensure visibility */
-}
-
-.nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #212530;
-    text-align: center;
-    opacity: 1; /* Ensure visibility when active */
-    transform: translateY(0);
-}
-
-.nav-links li {
-    margin: 10px 0;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #c86682;
-}
-
 /* Hide links initially for mobile */
 @media (max-width: 768px) {
     .nav-links {
