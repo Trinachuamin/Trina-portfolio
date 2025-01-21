@@ -25,7 +25,7 @@ body {
 body {
     margin: 0;
     padding: 0;
-    height: 850vh;
+    height: 920vh;
     overflow-y: scroll;
     position: relative;
 
@@ -850,3 +850,42 @@ footer {
     }
 }
 
+/* Button Styling */
+.btn-view-doc {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c86682; /* Button background color */
+    color: #ffffff; /* Text color */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+}
+
+.btn-view-doc:hover {
+    background-color: #b6576e; /* Darker shade for hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    text-decoration: none;
+}
+
+/* Art Style Section */
+.art-style-single {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.art-style-single img {
+    width: 80%; /* Adjust size as needed */
+    max-width: 600px; /* Limit the maximum width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.art-style-single img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
