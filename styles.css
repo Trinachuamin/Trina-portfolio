@@ -13,43 +13,70 @@ body {
     height: 400vh;
     overflow-y: scroll;
     position: relative;
+    scroll-behavior: smooth;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffffcc;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile Navigation */
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-        font-size: 14px;
+    .hamburger {
+        display: flex;
     }
 
-    .navbar {
+    .nav-links {
+        display: none;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #212530;
+        padding: 20px 0;
     }
 
-    .navbar a {
-        margin: 5px 0;
+    .nav-links.active {
+        display: flex;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .navbar a {
-        font-size: 12px;
-    }
-
-    button, a {
-        font-size: 12px;
-        padding: 10px;
-    }
-}
 
 
 /* Stars animation */
@@ -942,31 +969,45 @@ span {
     /* Makes the heading bold */
     font-family: 'Georgia', serif;
     color: #ffffffcc;
-    margin-bottom:60px ;
+    margin-bottom: 60px;
 }
+
 /* Portfolio Description Styling */
 #portfolio p {
-    font-size: 1.4rem; /* Slightly larger text for readability */
-    line-height: 1.8; /* Improves text spacing */
-    max-width: 800px; /* Limits width for better readability */
-    margin: 0 auto 20px; /* Centers the text and adds spacing */
-    color: #ffffffcc; /* Light text for contrast */
-    font-family: 'Georgia', serif; /* Matches heading font */
+    font-size: 1.4rem;
+    /* Slightly larger text for readability */
+    line-height: 1.8;
+    /* Improves text spacing */
+    max-width: 800px;
+    /* Limits width for better readability */
+    margin: 0 auto 20px;
+    /* Centers the text and adds spacing */
+    color: #ffffffcc;
+    /* Light text for contrast */
+    font-family: 'Georgia', serif;
+    /* Matches heading font */
 }
 
 /* Portfolio Link Styling */
 #portfolio p a {
-    color: #e39da5; /* Accent color for the link */
-    text-decoration: underline; /* Underlines the link */
-    font-weight: bold; /* Makes the link stand out */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #e39da5;
+    /* Accent color for the link */
+    text-decoration: underline;
+    /* Underlines the link */
+    font-weight: bold;
+    /* Makes the link stand out */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
 }
 
 /* Hover Effect for Link */
 #portfolio p a:hover {
-    color: #c86682; /* Darker accent on hover */
-    text-decoration: none; /* Removes underline on hover */
-    transform: scale(1.1); /* Slight zoom effect */
+    color: #c86682;
+    /* Darker accent on hover */
+    text-decoration: none;
+    /* Removes underline on hover */
+    transform: scale(1.1);
+    /* Slight zoom effect */
 }
 
 /* Header Styles */
@@ -1015,24 +1056,35 @@ span {
 
 /* Active Button */
 .filter-button.active {
-    background: linear-gradient(135deg, #a6485d, #c86682); /* Distinct gradient for active */
-    box-shadow: 0px 8px 15px rgba(200, 102, 130, 0.4); /* Glow effect */
-    transform: scale(1.1); /* Slightly larger size */
-    color: #ffffff; /* Ensure text stays visible */
-    border: 2px solid #e39da5; /* Optional border to highlight */
-    font-size: 1.1rem; /* Slightly larger font */
+    background: linear-gradient(135deg, #a6485d, #c86682);
+    /* Distinct gradient for active */
+    box-shadow: 0px 8px 15px rgba(200, 102, 130, 0.4);
+    /* Glow effect */
+    transform: scale(1.1);
+    /* Slightly larger size */
+    color: #ffffff;
+    /* Ensure text stays visible */
+    border: 2px solid #e39da5;
+    /* Optional border to highlight */
+    font-size: 1.1rem;
+    /* Slightly larger font */
 }
 
 
 /* Projects Container Styling */
 .projects-container {
-     display: flex;
-    justify-content: center; /* Centers the cards horizontally */
-    gap: 20px; /* Adds space between cards */
+    display: flex;
+    justify-content: center;
+    /* Centers the cards horizontally */
+    gap: 20px;
+    /* Adds space between cards */
     padding: 20px;
-    overflow-x: auto; /* Allows horizontal scrolling if needed */
-    white-space: nowrap; /* Ensures cards remain in a single row */
-    margin: 0 auto; /* Centers the container */
+    overflow-x: auto;
+    /* Allows horizontal scrolling if needed */
+    white-space: nowrap;
+    /* Ensures cards remain in a single row */
+    margin: 0 auto;
+    /* Centers the container */
 }
 
 /* Card Styling */
@@ -1064,6 +1116,7 @@ span {
     transform: translateY(-15px);
     /* Lift effect on hover */
 }
+
 /* Hidden State */
 .card.hidden {
     opacity: 0;
@@ -1082,6 +1135,7 @@ span {
         opacity: 0;
         transform: scale(0.9) translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: scale(1) translateY(0);
@@ -1502,6 +1556,7 @@ footer {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1518,4 +1573,441 @@ footer {
     opacity: 1;
     transform: translateY(0);
     animation: fadeSlideUp 0.6s ease forwards;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Georgia', serif;
+    color: #ffffffcc;
+    background-color: #212530;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #212530;
+    color: #ffffffcc;
+    font-size: 1rem;
+    border-top: 2px solid #c86682;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+/* Logo Styling */
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 412px) {
+
+    /* Logo Styling */
+    .navbar-brand img {
+        width: 50px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+
+        /* Home Section */
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 8rem 1rem;
+            position: relative;
+        }
+
+        .home-content {
+            max-width: 100%;
+            margin: 2rem auto;
+        }
+
+        .home-content h1 {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .home-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .home-content p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #ffffffcc;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .social-icons a {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            border: 2px solid #c86682;
+            border-radius: 50%;
+            color: #c86682;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #c86682;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .btn {
+            padding: 0.6rem 1.8rem;
+            font-size: 1rem;
+            background-color: #c86682;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #b6576e;
+            transform: scale(1.05);
+        }
+
+        .home-img {
+            width: 200px;
+        }
+
+        .home-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #about {
+            padding: 40px 15px;
+            gap: 20px;
+            /* Reduced space between elements */
+        }
+
+        .about-heading {
+            font-size: 2.5rem;
+            /* Smaller font size for heading */
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            flex-direction: column;
+            /* Stack content vertically */
+            gap: 30px;
+            /* Space between image and text */
+            text-align: center;
+            /* Center-align for smaller screens */
+        }
+
+        .about-content img {
+            width: 260px;
+            /* Smaller image size */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 15px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+            /* Slightly softer shadow */
+            margin: 0 auto;
+            /* Center the image */
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            /* Adjust font size */
+            line-height: 1.6;
+            /* Reduce line spacing */
+            margin-bottom: 15px;
+        }
+
+        .skills-images {
+            gap: 15px;
+            /* Reduce spacing between skill icons */
+        }
+
+        .skills-images img {
+            width: 60px;
+            /* Smaller skill icons */
+            height: 60px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #about {
+            padding: 30px 10px;
+            /* Reduced padding for very small screens */
+            gap: 15px;
+        }
+
+        .about-heading {
+            font-size: 2rem;
+            /* Further reduce heading size */
+        }
+
+        .about-content img {
+            width: 220px;
+            /* Smaller image for very small screens */
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            /* Smaller text for readability */
+        }
+
+        .skills-images img {
+            width: 50px;
+            /* Smaller skill icons */
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #portfolio {
+            padding: 30px 15px;
+            /* Reduce padding for smaller screens */
+        }
+
+        .about-heading2 {
+            font-size: 2.5rem;
+            /* Smaller font size for the heading */
+            margin-bottom: 20px;
+            /* Reduced margin */
+        }
+
+        @media (max-width: 768px) {
+            .projects-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 cards per row */
+                gap: 15px;
+                /* Space between cards */
+                justify-items: center;
+                /* Center-align cards within the grid */
+                padding: 10px;
+                /* Add padding for spacing */
+            }
+
+            .card {
+                width: 90%;
+                /* Make cards smaller to fit three in a row */
+                height: auto;
+                /* Allow height to adapt */
+                margin: 0;
+                /* Remove unnecessary margins */
+            }
+
+            .card .content {
+                padding: 10px;
+                /* Reduce padding inside cards */
+            }
+
+            .card-title {
+                font-size: 1rem;
+                /* Adjust title font size */
+            }
+
+            .card-description {
+                font-size: 0.9rem;
+                /* Adjust description font size */
+            }
+
+            .card-image {
+                width: 100%;
+                height: auto;
+                /* Maintain aspect ratio */
+                border-radius: 10px;
+                /* Keep rounded corners */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects-container {
+                grid-template-columns: repeat(3, 1fr);
+                /* Still 3 cards per row */
+                gap: 10px;
+                /* Reduce gap slightly for smaller screens */
+            }
+
+            .card {
+                width: 90%;
+                /* Adjust width slightly for very small screens */
+            }
+
+            .card-title {
+                font-size: 0.9rem;
+                /* Further reduce font size for titles */
+            }
+
+            .card-description {
+                font-size: 0.8rem;
+                /* Further reduce font size for descriptions */
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .btn {
+                padding: 0.7rem 1.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        /* Animation for sections appearing on scroll */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .scroll-animation.visible {
+            opacity: 1;
+            transform: translateY(0);
+            animation: fadeSlideUp 0.6s ease forwards;
+        }
+    }
+
+    /* Contact Section - Mobile Styles */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align the items */
+        gap: 20px; /* Add spacing between sections */
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 90%; /* Reduce the width for better fit */
+        margin: 0 auto; /* Center-align */
+        text-align: center; /* Center text alignment */
+    }
+
+    .contact-info p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        line-height: 1.5;
+    }
+
+    .contact-icons {
+        gap: 10px; /* Reduce gap between icons */
+        justify-content: center; /* Center-align icons */
+        margin-top: 15px;
+    }
+
+    .contact-icons i {
+        font-size: 1.5rem; /* Resize icons */
+    }
+
+    .contact-form form {
+        gap: 10px; /* Reduce spacing between form elements */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px; /* Reduce padding for smaller fields */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+/* For extra-small screens */
+@media (max-width: 480px) {
+    .contact-content {
+        gap: 15px; /* Reduce spacing further */
+    }
+
+    .contact-info p {
+        font-size: 0.9rem; /* Smaller font size for text */
+    }
+
+    .contact-icons i {
+        font-size: 1.2rem; /* Resize icons further */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem; /* Smaller font size for inputs */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
 }
