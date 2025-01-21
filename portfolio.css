@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 400vh;
+    height: 180vh;
     overflow-y: scroll;
     position: relative;
 }
@@ -905,31 +905,6 @@ span {
     /* Makes the heading bold */
     font-family: 'Georgia', serif;
     color: #ffffffcc;
-    margin-bottom:60px ;
-}
-/* Portfolio Description Styling */
-#portfolio p {
-    font-size: 1.4rem; /* Slightly larger text for readability */
-    line-height: 1.8; /* Improves text spacing */
-    max-width: 800px; /* Limits width for better readability */
-    margin: 0 auto 20px; /* Centers the text and adds spacing */
-    color: #ffffffcc; /* Light text for contrast */
-    font-family: 'Georgia', serif; /* Matches heading font */
-}
-
-/* Portfolio Link Styling */
-#portfolio p a {
-    color: #e39da5; /* Accent color for the link */
-    text-decoration: underline; /* Underlines the link */
-    font-weight: bold; /* Makes the link stand out */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-/* Hover Effect for Link */
-#portfolio p a:hover {
-    color: #c86682; /* Darker accent on hover */
-    text-decoration: none; /* Removes underline on hover */
-    transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Header Styles */
@@ -989,22 +964,20 @@ span {
 
 /* Projects Container Styling */
 .projects-container {
-     display: flex;
-    justify-content: center; /* Centers the cards horizontally */
-    gap: 20px; /* Adds space between cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
-    overflow-x: auto; /* Allows horizontal scrolling if needed */
-    white-space: nowrap; /* Ensures cards remain in a single row */
-    margin: 0 auto; /* Centers the container */
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Card Styling */
 .card {
     flex: 1 1 calc(33.33% - 40px);
     /* Flexible width for three cards per row */
-    flex: 0 0 auto;
-    width: 370px;
-    height: 370px;
+    width: 300px;
+    height: 300px;
     background: #212530;
     display: flex;
     justify-content: center;
@@ -1055,8 +1028,8 @@ span {
 .card .content {
     border-radius: 10px;
     background: #33394A;
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
     z-index: 1;
     margin: auto;
     /* Center the background within the card */
