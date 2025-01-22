@@ -85,22 +85,5 @@ function initializeCarousels() {
     addHoverEffects();
 }
 
-// Function to open the modal and display the selected image
-function openModal(imageSrc) {
-    const modal = document.getElementById('image-modal');
-    const modalImage = document.getElementById('modal-image');
-    const caption = document.getElementById('caption');
-
-    modal.style.display = 'flex'; // Show modal
-    modalImage.src = imageSrc; // Set image source
-    caption.textContent = imageSrc.split('/').pop().split('.')[0]; // Set caption based on filename
-}
-
-// Function to close the modal
-function closeModal() {
-    const modal = document.getElementById('image-modal');
-    modal.style.display = 'none'; // Hide modal
-}
-
 // Initialize carousels on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", initializeCarousels);
