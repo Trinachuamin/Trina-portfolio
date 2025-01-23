@@ -851,7 +851,7 @@ body {
 
 /* Navigation Bar */
 header {
-    background: transparent;
+    background: #212530;
     padding: 10px 20px;
     text-align: center;
     position: fixed;
@@ -864,7 +864,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent !important;
+    background-color: #212530
 }
 
 .navbar .logo {
@@ -876,12 +876,12 @@ header {
     list-style: none;
     display: flex;
     gap: 30px;
-    background-color: transparent !important;
+    background-color: #212530
 }
 
 .navbar ul li {
     display: flex;
-    background-color: transparent !important;
+    background-color: #212530
 }
 
 .navbar ul li a {
@@ -891,7 +891,7 @@ header {
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s ease, border-bottom 0.3s ease;
-    background-color: transparent !important;
+    background-color: #212530
 }
 
 .navbar-nav {

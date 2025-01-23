@@ -661,7 +661,7 @@ section {
 
 /* Navigation Bar */
 header {
-    background: transparent;
+    background: #212530;
     /* Make background transparent */
     padding: 10px 20px;
     text-align: center;
