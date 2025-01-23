@@ -988,7 +988,7 @@ section li {
 /* Screenshots Grid Styling */
 .screenshots-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* 5 images per row */
     gap: 20px;
     background-color: #2c303a;
@@ -997,7 +997,7 @@ section li {
 .screenshots-grid img {
     width: 100%;
     height: auto;
-    max-height: 80vh;
+    max-height: 70vh;
     object-fit: contain;
     transition: transform 0.3s ease;
     background-color: #2c303a;
@@ -1009,7 +1009,6 @@ section li {
 
 .screenshots-grids {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     background-color: #2c303a;
     align-items: center;
