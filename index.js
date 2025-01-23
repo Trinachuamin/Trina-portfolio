@@ -111,3 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+const skills = document.querySelectorAll('.skill');
+
+skills.forEach((skill) => {
+  const experience = skill.getAttribute('data-experience');
+  const messageBubble = skill.querySelector('.message-bubble');
+  messageBubble.textContent = experience;
+});
