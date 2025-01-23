@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-End Web Development</title>
-    <link rel="stylesheet" href="pizza.css">
+    <title>Pizza App</title>
+    <link rel="stylesheet" type="text/css" href="pizza.css" />
 </head>
 
 <body1>
@@ -115,7 +115,6 @@
 <body>
 
     <!-- Navigation Bar -->
-    <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg justify-content-center">
             <a class="navbar-brand" href="#home">
@@ -137,50 +136,92 @@
             </ul>
         </nav>
     </header>
+    <br><br><br><br><br>
+    <!-- Project Title & Overview -->
+    <section class="project-overview" style="border-left: 5px solid #c86682;">
+        <h1>Pizza Menu Web Application</h1>
+        <p>STYLESHOP is a modern e-commerce app designed to offer a seamless and intuitive shopping experience. The
+            project emphasizes clean visuals, user-friendly navigation, and a cohesive shopping journey that aligns with
+            users expectations for online retail platforms.<br><br>
 
-    <section id="portfolio" class="frontend-section">
-        <div class="responsive-design">
-            <h2>PIZZA MENU APP</h2>
-            <p>Done with React</p>
-            <div class="video-container">
-                <!-- Video without autoplay -->
-                <video controls loop muted>
-                    <source src="public/videos/pizza.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <!-- Add Button Link Here -->
-            <div class="button-container">
-                <a href="https://github.com/Trinachuamin/pizza-app" target="_blank"
-                    class="button-link">
-                    <button>View Github Link</button>
-                    <a href="https://pizza-app-delta-six.vercel.app/" target="_blank"
-                    class="button-link">
-                    <button>View Website</button>
-                </a>
-            </div>
-        </div>
-        <div class="description-section">
-            <h2>PIZZA MENU APPLICATION</h2>
-            <p class="creator">Created by Trina Chua</p>
-
-            <h3>Design Concept:</h3>
-            <p>
-                For the pizza menu, all the pizzas are categorized and listed in a visually appealing grid layout.
-                The categories include vegetarian pizzas, meat-lover pizzas, and specialty pizzas.
-                Each card includes high-quality images, descriptions,
-                and prices for each pizza.
-            </p>
-            <p>
-                Breadcrumb navigation is implemented at the top of the menu pages to help users know exactly
-                where they are within the website. Each pizza category page displays 6 to 12 products, with their
-                prices and descriptions styled consistently to maintain a polished and modern look.
-            </p>
-            <div class="back-to-portfolio">
-                <a href="https://trinachuamin.github.io/Trina-portfolio/portfolio.html" class="back-button">Back to
-                    Portfolio</a>
-            </div>
+            The app caters to users by enabling them to browse, select, and purchase fashion items effortlessly, with
+            features such as personalized recommendations, easy payment methods, and an interactive shopping cart
+            system.
+        </p>
     </section>
+
+    <!-- Project Screenshots Section -->
+    <section class="project-screenshots" style="border-left: 5px solid #c86682;">
+        <h2>Project Screens</h2><br>
+        <div class="screenshots-grid">
+            <img src="public/code/1.png" alt="Profile Screen">
+            <img src="public/code/2.png" alt="Profile Screen">
+        </div>
+    </section>
+
+    <section class="ui-elements">
+        <h2>About the Pizza Menu Web Application</h2>
+        <p>About Trina's Pizza Co. App this app is a modern and user-friendly platform designed to showcase
+            delicious menu items with a clean, inviting design. With features like dynamic search functionality,
+            real-time shop status updates, and seamless responsiveness, it ensures customers can browse and engage with
+            the menu effortlessly. Built with React, the app highlights practical uses of state management and real-time
+            functionality for an enhanced user experience.</p>
+    </section>
+
+    <section class="ui-elements">
+        <h2>Design Concept</h2>
+        <p>
+            The Trina's Pizza Co. app features a clean and inviting design with a warm beige and yellow color scheme,
+            showcasing the menu in an elegant card format with high-quality images, descriptions, and prices. A search
+            bar enables quick filtering of items, while dynamic features like real-time status updates ensure
+            transparency (e.g., "Sorry, we're closed"). The responsive layout provides a seamless experience across
+            devices, combining simplicity, functionality, and a visually appealing interface to make browsing the menu
+            easy and enjoyable.
+        </p>
+    </section>
+
+    <section class="ui-elements">
+        <h2>Key Functions</h2>
+        <ul>
+            <li><strong>Search Functionality:</strong> Utilizes useState to dynamically filter and display
+                menu items based on user input, ensuring an efficient and user-friendly search experience.</li>
+            <li><strong>Real-Time Shop Status:</strong> Automatically updates the shop's open or closed status based on
+                the user's local time, providing accurate and transparent availability information.</li>
+            <li><strong>React Integration:</strong> Demonstrates the use of React hooks like useState for
+                state management, offering a practical example of integrating dynamic and real-time functionality in web
+                applications.</li>
+        </ul>
+
+    </section>
+
+    <section class="features-highlights"><br>
+        <h2>Video Demo</h2><br>
+        <div class="video-container">
+            <!-- Video with autoplay -->
+            <video autoplay controls loop muted>
+                <source src="public/videos/pizza.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/Trinachuamin/pizza-app" target="_blank" class="btn github-button">View Github
+                Link</a>
+            <a href="https://pizza-app-delta-six.vercel.app/" target="_blank" class="btn github-button">
+                View Website</a>
+        </div><br>
+    </section>
+
+
+    <div class="back-to-portfolio">
+        <a href="https://trinachuamin.github.io/Trina-portfolio/portfolio.html" class="back-button">Back to
+            Portfolio</a>
+    </div><br><br>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Trina Chua | UI/UX Design Project</p>
+    </footer>
+
 </body>
 
 </html>

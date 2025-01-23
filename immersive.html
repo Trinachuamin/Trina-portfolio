@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-End Web Development</title>
-    <link rel="stylesheet" href="immersive.css">
+    <title>Pizza App</title>
+    <link rel="stylesheet" type="text/css" href="immersive.css" />
 </head>
 
 <body1>
@@ -115,7 +115,6 @@
 <body>
 
     <!-- Navigation Bar -->
-    <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg justify-content-center">
             <a class="navbar-brand" href="#home">
@@ -137,251 +136,116 @@
             </ul>
         </nav>
     </header>
+    <br><br><br><br><br>
+    
+    <!-- Project Screenshots Section -->
+    <section class="project-screenshots" style="border-left: 5px solid #c86682;">
+        <h2 style="font-size: 3.2rem;">AR Namecard</h2><br>
+        <div class="carousel-container">
 
-    <section id="portfolio" class="frontend-section">
-        <div class="responsive-design">
-            <div class="description-section">
-                <h2>AR Namecard</h2>
-                <p class="creator">Created using canva</p>
-                <div class="carousel-container">
-
-                    <div id="immersive" class="carousel">
-                        <!-- Carousel Images -->
-                        <div class="carousel-item active" onclick="openModal('public/immersive/1.jpg')">
-                            <img src="public/immersive/1.jpg" alt="LoginPage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/2.jpg')">
-                            <img src="public/immersive/2.jpg" alt="HomePage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/3.jpg')">
-                            <img src="public/immersive/3.jpg" alt="Addpage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/4.jpg')">
-                            <img src="public/immersive/4.jpg" alt="DetailsPage" class="carousel-image">
-                        </div>
-
-                        <!-- Modal -->
-                        <div id="image-modal" class="modal">
-                            <span class="close" onclick="closeModal()">&times;</span>
-                            <img class="modal-content" id="modal-image">
-                            <div id="caption"></div>
-                        </div>
-
-                    </div>
-
-                    <!-- Image Previews -->
-                    <div id="immersive" class="carousel-previews">
-                        <img src="public/immersive/1.jpg" alt="LoginPage" class="preview-image"
-                            onclick="setCarousel(0)">
-                        <img src="public/immersive/2.jpg" alt="HomePage" class="preview-image" onclick="setCarousel(1)">
-                        <img src="public/immersive/3.jpg" alt="Addpage" class="preview-image" onclick="setCarousel(2)">
-                        <img src="public/immersive/4.jpg" alt="DetailsPage" class="preview-image"
-                            onclick="setCarousel(3)">
-                    </div>
-
-                    <h3>Design Concept:</h3>
-                    <p>
-                        There are 2 conceptual design to derive into the conclusion of the name card. The
-                        concept sketches allows the designer to gather ideas of how they want their end product to look
-                        like.
-                    </p>
-                    <p>
-                        The "Trina's ChocoBoutique" name card combines earthy tones, elegant serif typography, and a
-                        playful chocolate-inspired logo to reflect the brand's richness and artisanal quality. Its clean
-                        layout and subtle details create a sophisticated yet approachable design. I chose this over the
-                        Book Cafe card because it feels more unique, aligns better with my brand’s identity, and
-                        effectively conveys a sense of indulgence and craftsmanship.
-
-                    </p>
-                    <p>
-                        The "Trina's ChocoBoutique" name card uses AR technology with an AR robot, creating an
-                        interactive experience. When viewed through the robot's camera, it showcases dynamic brand
-                        elements like chocolate products or animations, making the card innovative, memorable, and
-                        aligned with modern branding trends.
-                    </p>
-
-                    <h3>The Result of the AR Name Card:</h3>
-                    <div class="video-container">
-                        <!-- Video without autoplay -->
-                        <video controls loop muted>
-                            <source src="public/immersive/AR.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-
-                    <h2>VR Escape Room</h2>
-                    <p class="creator">Imagine solving puzzles in an escape room, but virtually. The purpose of this
-                        Virtual Reality (VR) escape room game is to bring forth an immersive experience for the user to
-                        appreciate and enjoy his or her surroundings.</p>
-
-
-                    <div id="vrEscape" class="carousel">
-                        <!-- Carousel Images -->
-                        <div class="carousel-item active" onclick="openModal('public/immersive/5.png')">
-                            <img src="public/immersive/5.png" alt="LoginPage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/6.png')">
-                            <img src="public/immersive/6.png" alt="HomePage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/7.png')">
-                            <img src="public/immersive/7.png" alt="Addpage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/8.png')">
-                            <img src="public/immersive/8.png" alt="DetailsPage" class="carousel-image">
-                        </div>
-
-                        <!-- Modal -->
-                        <div id="image-modal" class="modal">
-                            <span class="close" onclick="closeModal()">&times;</span>
-                            <img class="modal-content" id="modal-image">
-                            <div id="caption"></div>
-                        </div>
-
-                    </div>
-
-                    <!-- Image Previews -->
-                    <div id="vrEscape" class="carousel-previews">
-                        <img src="public/immersive/5.png" alt="LoginPage" class="preview-image"
-                            onclick="setCarousel(4)">
-                        <img src="public/immersive/6.png" alt="HomePage" class="preview-image" onclick="setCarousel(5)">
-                        <img src="public/immersive/7.png" alt="Addpage" class="preview-image" onclick="setCarousel(6)">
-                        <img src="public/immersive/8.png" alt="DetailsPage" class="preview-image"
-                            onclick="setCarousel(7)">
-                    </div>
-
-                    <h3>OVERVIEW OF THE ESCAPE ROOM</h3>
-
-                    <p>
-                        This document specifies a design VR gameplay of a game titled “The Elemental Crystal
-                        Conservatory”. It was well
-                        thought and planned on 29th November 2021. The architecture of the game was greatly inspired by
-                        puzzle game called The Room Series and design and ideas from the game called Fire boy & water
-                        girl elements Thus, the
-                        project was created by Trina chua.
-                    </p>
-                    <h3>STORY</h3>
-                    <p>
-                        Players find themselves trapped within a mystical conservatory where the balance among four
-                        elemental crystals (Earth, Water, Crystal, and Fire) has been disrupted. This imbalance has
-                        locked the conservatory's doors, and to escape, players must restore harmony to each element by
-                        solving puzzles that align with their respective characteristics.
-                    </p>
-                    <h3>Art Style</h3>
-                    <p>
-                        The art style of "The Elemental Crystal Conservatory" features a visually stunning and mystical
-                        environment, emphasizing the unique characteristics of each elemental crystal. Below is a
-                        depiction of the game's artistic theme.
-                    </p>
-                    <div class="art-style-single">
-                        <img src="public/immersive/20.png" alt="Mystical Art Style">
-                    </div><br><br>
-                    <h2>UNIQUE SELLING POINTS</h2>
-                    <div id="unique" class="carousel">
-                        <!-- Carousel Images -->
-                        <div class="carousel-item active" onclick="openModal('public/immersive/16.png')">
-                            <img src="public/immersive/16.png" alt="LoginPage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/17.png')">
-                            <img src="public/immersive/17.png" alt="HomePage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/18.png')">
-                            <img src="public/immersive/18.png" alt="Addpage" class="carousel-image">
-                        </div>
-                        <div class="carousel-item" onclick="openModal('public/immersive/19.png')">
-                            <img src="public/immersive/19.png" alt="DetailsPage" class="carousel-image">
-                        </div>
-
-                        <!-- Modal -->
-                        <div id="image-modal" class="modal">
-                            <span class="close" onclick="closeModal()">&times;</span>
-                            <img class="modal-content" id="modal-image">
-                            <div id="caption"></div>
-                        </div>
-                    </div>
-
-                    <!-- Image Previews -->
-                    <div id="unique-previews" class="carousel-previews">
-                        <img src="public/immersive/16.png" alt="LoginPage" class="preview-image"
-                            onclick="setCarousel('unique', 0)">
-                        <img src="public/immersive/17.png" alt="HomePage" class="preview-image"
-                            onclick="setCarousel('unique', 1)">
-                        <img src="public/immersive/18.png" alt="Addpage" class="preview-image"
-                            onclick="setCarousel('unique', 2)">
-                        <img src="public/immersive/19.png" alt="DetailsPage" class="preview-image"
-                            onclick="setCarousel('unique', 3)">
-                    </div>
-                    <section id="game-puzzles" class="game-puzzles-section">
-                        <h2>Game Puzzles</h2>
-                        <div class="puzzle">
-                            <img src="public/immersive/5.png" alt="Mysterious Shapes" class="puzzle-image">
-                            <h3>1. Earth Crystal Puzzle</h3>
-                            <p>
-                                The objective of the puzzle is to break wooden crates using an axe and collect the stone
-                                items hidden within. These stones must then be placed on the stone table, triggering the
-                                appearance of a pickaxe. The pickaxe is used to unlock the door, allowing progression to
-                                the next puzzle. Players should pay attention to environmental clues to figure out the
-                                necessary steps. Interactions include using the axe to break the crates, placing the
-                                stones on the stone table, and using the pickaxe to unlock the door and advance.
-
-                            </p>
-                        </div>
-
-                        <div class="puzzle">
-                            <img src="public/immersive/6.png" alt="Hidden Numbers" class="puzzle-image">
-                            <h3>2. Crystal Puzzle</h3>
-                            <p>
-                                The objective of the Crystal Puzzle is to arrange colored crystals onto their
-                                corresponding stone platforms on the ground. Clues are provided by the colored crystals
-                                placed beside each stone platform, guiding players to match them correctly. The
-                                interaction involves dragging and dropping the crystals onto the appropriate platforms,
-                                unlocking the next puzzle stage upon successful completion.
-                            </p>
-                        </div>
-                        <div class="puzzle">
-                            <img src="public/immersive/7.png" alt="Hidden Numbers" class="puzzle-image">
-                            <h3>3. Water Crystal Puzzle</h3>
-                            <p>
-                                In the Water Crystal Puzzle, players must decipher a clue to determine the correct
-                                sequence of buttons to press on a stone bridge suspended over water. Once the buttons
-                                are pressed in the correct order, the bridge will appear. The final step involves
-                                finding the correct key to unlock the door to the next stage. Clues include the crystal
-                                buttons' sequence and the location of the key. Interactions require players to press
-                                buttons in the right sequence and use the key to proceed.
-                            </p>
-                        </div>
-                        <div class="puzzle">
-
-                            <img src="public/immersive/8.png" alt="Hidden Numbers" class="puzzle-image">
-                            <h3>4. Fire Crystal Puzzle</h3>
-                            <p>
-                                The Fire Crystal Puzzle requires players to light candles in ascending height order to
-                                unlock the door. Clues include the varying sizes of the candles and a scroll that
-                                provides a hint about the correct sequence. Players interact by lighting the candles in
-                                the correct order, triggering the door to open and allowing progression.
-                            </p>
-                        </div>
-
-
-                        <h2>The Result of the VR Escape Room</h2>
-                        <div class="video-containers">
-                            <!-- Video without autoplay -->
-                            <video controls loop muted>
-                                <source src="public/immersive/VR.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <a href="public/immersive/Game Design Document.docx" target="_blank" class="btn-view-doc">
-                                View the Escape Room Design Document
-                            </a>
-                            <div class="back-to-portfolio">
-                                <a href="https://trinachuamin.github.io/Trina-portfolio/portfolio.html"
-                                    class="back-button">Back to
-                                    Portfolio</a>
-                            </div>
-                    </section>
+            <div id="immersive" class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('public/immersive/1.jpg')">
+                    <img src="public/immersive/1.jpg" alt="LoginPage" class="carousel-image">
                 </div>
+                <div class="carousel-item" onclick="openModal('public/immersive/2.jpg')">
+                    <img src="public/immersive/2.jpg" alt="HomePage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('public/immersive/3.jpg')">
+                    <img src="public/immersive/3.jpg" alt="Addpage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('public/immersive/4.jpg')">
+                    <img src="public/immersive/4.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+
             </div>
-            <script src="immersive.js"></script>
+            <!-- Image Previews -->
+            <div id="immersive" class="carousel-previews">
+                <img src="public/immersive/1.jpg" alt="LoginPage" class="preview-image"
+                    onclick="setCarousel(0)">
+                <img src="public/immersive/2.jpg" alt="HomePage" class="preview-image" onclick="setCarousel(1)">
+                <img src="public/immersive/3.jpg" alt="Addpage" class="preview-image" onclick="setCarousel(2)">
+                <img src="public/immersive/4.jpg" alt="DetailsPage" class="preview-image"
+                    onclick="setCarousel(3)">
+            </div>
+
+
     </section>
+
+    <section class="ui-elements">
+        <h2>Design Concept</h2>
+        <p>
+            There are 2 conceptual design to derive into the conclusion of the name card. The
+            concept sketches allows the designer to gather ideas of how they want their end product to look
+            like.
+        </p>
+        <p>
+            The "Trina's ChocoBoutique" name card combines earthy tones, elegant serif typography, and a
+            playful chocolate-inspired logo to reflect the brand's richness and artisanal quality. Its clean
+            layout and subtle details create a sophisticated yet approachable design. I chose this over the
+            Book Cafe card because it feels more unique, aligns better with my brand’s identity, and
+            effectively conveys a sense of indulgence and craftsmanship.
+
+        </p>
+        <p>
+            The "Trina's ChocoBoutique" name card uses AR technology with an AR robot, creating an
+            interactive experience. When viewed through the robot's camera, it showcases dynamic brand
+            elements like chocolate products or animations, making the card innovative, memorable, and
+            aligned with modern branding trends.
+        </p>
+
+    </section>
+
+    <section class="ui-elements">
+        <h2>Key Functions</h2>
+        <ul>
+            <li><strong>Search Functionality:</strong> Utilizes useState to dynamically filter and display
+                menu items based on user input, ensuring an efficient and user-friendly search experience.</li>
+            <li><strong>Real-Time Shop Status:</strong> Automatically updates the shop's open or closed status based on
+                the user's local time, providing accurate and transparent availability information.</li>
+            <li><strong>React Integration:</strong> Demonstrates the use of React hooks like useState for
+                state management, offering a practical example of integrating dynamic and real-time functionality in web
+                applications.</li>
+        </ul>
+
+    </section>
+
+    <section class="features-highlights"><br>
+        <h2>Video Demo</h2><br>
+        <div class="video-container">
+            <!-- Video with autoplay -->
+            <video autoplay controls loop muted>
+                <source src="public/videos/pizza.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/Trinachuamin/pizza-app" target="_blank" class="btn github-button">View Github
+                Link</a>
+            <a href="https://pizza-app-delta-six.vercel.app/" target="_blank" class="btn github-button">
+                View Website</a>
+        </div><br>
+    </section>
+
+
+    <div class="back-to-portfolio">
+        <a href="https://trinachuamin.github.io/Trina-portfolio/portfolio.html" class="back-button">Back to
+            Portfolio</a>
+    </div><br><br>
+    <script src="immersive.js"></script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Trina Chua | UI/UX Design Project</p>
+    </footer>
+
 </body>
 
 </html>
