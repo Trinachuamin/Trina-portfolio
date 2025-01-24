@@ -1097,6 +1097,14 @@ footer {
     background-color: #2c303a;
 
 }
+.project-overview p1 {
+    font-size: 1.2em;
+    color: #c0c0c0d3; /* Soft gray for Figma text */
+    display: block; /* Ensure proper spacing below the header */
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #2c303a;
+}
 
 
 .project-links {
