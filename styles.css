@@ -1053,17 +1053,11 @@ span {
 /* Active Button */
 .filter-button.active {
     background: linear-gradient(135deg, #a6485d, #c86682);
-    /* Distinct gradient for active */
     box-shadow: 0px 8px 15px rgba(200, 102, 130, 0.4);
-    /* Glow effect */
     transform: scale(1.1);
-    /* Slightly larger size */
     color: #ffffff;
-    /* Ensure text stays visible */
     border: 2px solid #e39da5;
-    /* Optional border to highlight */
     font-size: 1.1rem;
-    /* Slightly larger font */
 }
 
 
@@ -1071,16 +1065,11 @@ span {
 .projects-container {
     display: flex;
     justify-content: center;
-    /* Centers the cards horizontally */
     gap: 20px;
-    /* Adds space between cards */
     padding: 20px;
     overflow-x: auto;
-    /* Allows horizontal scrolling if needed */
     white-space: nowrap;
-    /* Ensures cards remain in a single row */
     margin: 0 auto;
-    /* Centers the container */
 }
 
 /* Card Styling */
@@ -1088,8 +1077,8 @@ span {
     flex: 1 1 calc(33.33% - 40px);
     /* Flexible width for three cards per row */
     flex: 0 0 auto;
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 310px;
     background: #212530;
     display: flex;
     justify-content: center;
@@ -1142,8 +1131,8 @@ span {
 .card .content {
     border-radius: 10px;
     background: #33394A;
-    width: 310px;
-    height: 310px;
+    width: 280px;
+    height: 290px;
     z-index: 1;
     margin: auto;
     /* Center the background within the card */
@@ -1404,18 +1393,24 @@ span {
     /* Center the content area */
 }
 
-.contact-info,
-.contact-form {
+.contact-info {
     flex: 1;
-    /* Allow the elements to grow equally */
-    max-width: 450px;
-    /* Adjusted max-width for responsiveness */
-    min-width: 280px;
-    /* Set a minimum width for responsiveness */
+    max-width: 600px;
+    min-width: 430px;
+    background-color: #33394a80;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffffcc;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly moved down */
+    animation: fadeInUp 1.5s ease forwards; 
+    box-shadow: 0 8px 20px rgba(200, 102, 130, 0.5); /* Add glow */
+    transform: translateY(-5px); /* Slight upward movement */
+    transition: all 0.4s ease;
 }
 
-.contact-info h3,
-.contact-form h3 {
+.contact-info h3 {
     font-size: 2em;
     color: #333;
     margin-bottom: 25px;
@@ -1428,17 +1423,18 @@ span {
 
 .contact-info p {
     font-size: 1.3em;
-    line-height: 1.6;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
 .contact-info a {
-    color: #ffffffcc;
+    color: #c86682; /* Link color */
     text-decoration: none;
     font-weight: 600;
 }
 
 .contact-info a:hover {
-    color: #c86682;
+    color: 0 8px 20px rgba(200, 102, 130, 0.5); /* Change color on hover */
     text-decoration: underline;
 }
 
@@ -1451,7 +1447,7 @@ span {
 }
 
 .contact-icons i {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 40px;
     /* For Font Awesome icons */
 }
@@ -1460,10 +1456,6 @@ span {
     width: 50px;
     height: 50px;
     transition: transform 0.3s;
-}
-
-.contact-icons li:hover {
-    transform: scale(1.15);
 }
 
 .contact-form form {
@@ -1485,7 +1477,34 @@ span {
     resize: vertical;
     min-height: 140px;
 }
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+/* Contact Icons Hover Animation */
+.contact-icons i {
+    font-size: 40px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color transition */
+}
+
+.contact-icons i:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    color: #c86682; /* Change icon color on hover */
+}
+
+/* Glowing Effect on Box Hover */
+.contact-info:hover {
+    box-shadow: 0 8px 20px rgba(200, 102, 130, 0.5); /* Add glow */
+    transform: translateY(-5px); /* Slight upward movement */
+    transition: all 0.4s ease; /* Smooth transition for the glow and movement */
+}
 .submit-btn {
     background-color: #c86682;
     color: #fff;
