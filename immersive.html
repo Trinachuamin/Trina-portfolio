@@ -137,7 +137,7 @@
         </nav>
     </header>
     <br><br><br><br><br>
-    
+
     <!-- Project Screenshots Section -->
     <section class="project-screenshots" style="border-left: 5px solid #c86682;">
         <h2 style="font-size: 3.2rem;">AR Namecard</h2><br>
@@ -168,12 +168,10 @@
             </div>
             <!-- Image Previews -->
             <div id="immersive" class="carousel-previews">
-                <img src="public/immersive/1.jpg" alt="LoginPage" class="preview-image"
-                    onclick="setCarousel(0)">
+                <img src="public/immersive/1.jpg" alt="LoginPage" class="preview-image" onclick="setCarousel(0)">
                 <img src="public/immersive/2.jpg" alt="HomePage" class="preview-image" onclick="setCarousel(1)">
                 <img src="public/immersive/3.jpg" alt="Addpage" class="preview-image" onclick="setCarousel(2)">
-                <img src="public/immersive/4.jpg" alt="DetailsPage" class="preview-image"
-                    onclick="setCarousel(3)">
+                <img src="public/immersive/4.jpg" alt="DetailsPage" class="preview-image" onclick="setCarousel(3)">
             </div>
 
 
@@ -204,17 +202,11 @@
     </section>
 
     <section class="ui-elements">
-        <h2>Key Functions</h2>
-        <ul>
-            <li><strong>Search Functionality:</strong> Utilizes useState to dynamically filter and display
-                menu items based on user input, ensuring an efficient and user-friendly search experience.</li>
-            <li><strong>Real-Time Shop Status:</strong> Automatically updates the shop's open or closed status based on
-                the user's local time, providing accurate and transparent availability information.</li>
-            <li><strong>React Integration:</strong> Demonstrates the use of React hooks like useState for
-                state management, offering a practical example of integrating dynamic and real-time functionality in web
-                applications.</li>
-        </ul>
-
+        <h2>Key Functionality</h2>
+        <p>The AR name card, when paired with the Robot APK, provides an interactive and engaging augmented reality
+            experience. Upon scanning the name card with the Robot APK, a pop-up appears showcasing two distinct items
+            in a 3D environment. These items can represent key highlights or interactive elements associated with the
+            individual or brand the name card belongs to.</p>
     </section>
 
     <section class="features-highlights"><br>
@@ -222,17 +214,196 @@
         <div class="video-container">
             <!-- Video with autoplay -->
             <video autoplay controls loop muted>
-                <source src="public/videos/pizza.mp4" type="video/mp4">
+                <source src="public/immersive/AR.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <section class="ui-elements">
+        <h2>VR Escape Room</h2>
+        <p>
+            Imagine solving puzzles in an escape room, but virtually. The purpose of this
+            Virtual Reality (VR) escape room game is to bring forth an immersive experience for the user to
+            appreciate and enjoy his or her surroundings.
+        </p>
+
+    </section>
+
+
+    <section class="project-screenshots" style="border-left: 5px solid #c86682;">
+        <h2 style="font-size: 3.2rem;">AR Namecard</h2><br>
+        <div class="carousel-container">
+
+            <div id="vrEscape" class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('public/immersive/5.png')">
+                    <img src="public/immersive/5.png" alt="LoginPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('public/immersive/6.png')">
+                    <img src="public/immersive/6.png" alt="HomePage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('public/immersive/7.png')">
+                    <img src="public/immersive/7.png" alt="Addpage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('public/immersive/8.png')">
+                    <img src="public/immersive/8.png" alt="DetailsPage" class="carousel-image">
+                </div>
+
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+
+            <!-- Image Previews -->
+            <div id="vrEscape" class="carousel-previews">
+                <img src="public/immersive/5.png" alt="LoginPage" class="preview-image" onclick="setCarousel(4)">
+                <img src="public/immersive/6.png" alt="HomePage" class="preview-image" onclick="setCarousel(5)">
+                <img src="public/immersive/7.png" alt="Addpage" class="preview-image" onclick="setCarousel(6)">
+                <img src="public/immersive/8.png" alt="DetailsPage" class="preview-image" onclick="setCarousel(7)">
+            </div>
+
+    </section>
+
+    <section class="ui-elements">
+        <h2>OVERVIEW OF THE ESCAPE ROOM</h2>
+        <p>
+            This document specifies a design VR gameplay of a game titled “The Elemental Crystal
+            Conservatory”. It was well
+            thought and planned. The architecture of the game was greatly inspired by
+            puzzle game called The Room Series and design and ideas from the game called Fire boy & water
+            girl elements Thus, the
+            project was created by Trina chua.
+        </p>
+
+    </section>
+
+    <section class="ui-elements">
+        <h2>STORY</h2>
+        <p>Players find themselves trapped within a mystical conservatory where the balance among four
+            elemental crystals (Earth, Water, Crystal, and Fire) has been disrupted. This imbalance has
+            locked the conservatory's doors, and to escape, players must restore harmony to each element by
+            solving puzzles that align with their respective characteristics.
+        </p>
+    </section>
+    <section class="ui-elements">
+        <h2>Art Style</h2>
+        <p>The art style of "The Elemental Crystal Conservatory" features a visually stunning and mystical
+            environment, emphasizing the unique characteristics of each elemental crystal. Below is a
+            depiction of the game's artistic theme.
+
+        </p>
+        <div class="art-style-single">
+            <img src="public/immersive/20.png" alt="Mystical Art Style">
+        </div><br><br>
+
+    </section>
+    <section class="ui-elements">
+        <h2>UNIQUE SELLING POINTS</h2>
+        <div id="unique" class="carousel">
+            <!-- Carousel Images -->
+            <div class="carousel-item active" onclick="openModal('public/immersive/16.png')">
+                <img src="public/immersive/16.png" alt="LoginPage" class="carousel-image">
+            </div>
+            <div class="carousel-item" onclick="openModal('public/immersive/17.png')">
+                <img src="public/immersive/17.png" alt="HomePage" class="carousel-image">
+            </div>
+            <div class="carousel-item" onclick="openModal('public/immersive/18.png')">
+                <img src="public/immersive/18.png" alt="Addpage" class="carousel-image">
+            </div>
+            <div class="carousel-item" onclick="openModal('public/immersive/19.png')">
+                <img src="public/immersive/19.png" alt="DetailsPage" class="carousel-image">
+            </div>
+
+            <!-- Modal -->
+            <div id="image-modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <div id="caption"></div>
+            </div>
+        </div>
+
+        <!-- Image Previews -->
+        <div id="unique-previews" class="carousel-previews">
+            <img src="public/immersive/16.png" alt="LoginPage" class="preview-image" onclick="setCarousel('unique', 0)">
+            <img src="public/immersive/17.png" alt="HomePage" class="preview-image" onclick="setCarousel('unique', 1)">
+            <img src="public/immersive/18.png" alt="Addpage" class="preview-image" onclick="setCarousel('unique', 2)">
+            <img src="public/immersive/19.png" alt="DetailsPage" class="preview-image"
+                onclick="setCarousel('unique', 3)">
+        </div>
+
+    </section>
+    <section class="ui-elements">
+        <h2>Game Puzzles</h2>
+        <div class="puzzle">
+            <img src="public/immersive/5.png" alt="Mysterious Shapes" class="puzzle-image">
+            <h3>1. Earth Crystal Puzzle</h3>
+            <p>
+                The objective of the puzzle is to break wooden crates using an axe and collect the stone
+                items hidden within. These stones must then be placed on the stone table, triggering the
+                appearance of a pickaxe. The pickaxe is used to unlock the door, allowing progression to
+                the next puzzle. Players should pay attention to environmental clues to figure out the
+                necessary steps. Interactions include using the axe to break the crates, placing the
+                stones on the stone table, and using the pickaxe to unlock the door and advance.
+
+            </p>
+        </div>
+
+        <div class="puzzle">
+            <img src="public/immersive/6.png" alt="Hidden Numbers" class="puzzle-image">
+            <h3>2. Crystal Puzzle</h3>
+            <p>
+                The objective of the Crystal Puzzle is to arrange colored crystals onto their
+                corresponding stone platforms on the ground. Clues are provided by the colored crystals
+                placed beside each stone platform, guiding players to match them correctly. The
+                interaction involves dragging and dropping the crystals onto the appropriate platforms,
+                unlocking the next puzzle stage upon successful completion.
+            </p>
+        </div>
+        <div class="puzzle">
+            <img src="public/immersive/7.png" alt="Hidden Numbers" class="puzzle-image">
+            <h3>3. Water Crystal Puzzle</h3>
+            <p>
+                In the Water Crystal Puzzle, players must decipher a clue to determine the correct
+                sequence of buttons to press on a stone bridge suspended over water. Once the buttons
+                are pressed in the correct order, the bridge will appear. The final step involves
+                finding the correct key to unlock the door to the next stage. Clues include the crystal
+                buttons' sequence and the location of the key. Interactions require players to press
+                buttons in the right sequence and use the key to proceed.
+            </p>
+        </div>
+        <div class="puzzle">
+
+            <img src="public/immersive/8.png" alt="Hidden Numbers" class="puzzle-image">
+            <h3>4. Fire Crystal Puzzle</h3>
+            <p>
+                The Fire Crystal Puzzle requires players to light candles in ascending height order to
+                unlock the door. Clues include the varying sizes of the candles and a scroll that
+                provides a hint about the correct sequence. Players interact by lighting the candles in
+                the correct order, triggering the door to open and allowing progression.
+            </p>
+        </div>
+
+    </section>
+    <section class="features-highlights"><br>
+        <h2>Video Demo</h2><br>
+        <div class="video-containers">
+            <!-- Video with autoplay -->
+            <video autoplay controls loop muted>
+                <source src="public/immersive/VR.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="project-links">
-            <a href="https://github.com/Trinachuamin/pizza-app" target="_blank" class="btn github-button">View Github
-                Link</a>
-            <a href="https://pizza-app-delta-six.vercel.app/" target="_blank" class="btn github-button">
-                View Website</a>
+            <a href="public/immersive/Game Design Document.docx" target="_blank" class="btn github-button">View the
+                Escape Room Design Document
+            </a>
         </div><br>
     </section>
+
 
 
     <div class="back-to-portfolio">
